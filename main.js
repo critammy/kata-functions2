@@ -17,7 +17,7 @@ function multiply(x, y) {
     let answer = 0
     for (let index = 0; index <= y - 1; index++) {
         answer = add(answer, x)
-      
+
     }
 
     return answer
@@ -35,11 +35,14 @@ console.log(multiply(6, 4))
 
 // 3 * 3 * 3 * 3 = 81
 function power(x, n) {
-power = Math.pow
-return power
- }
+    let answer = 1
+    for (let index = 0; index < n ; index++) {
+        answer = multiply(answer, x)
+    }
+    return answer
+}
 
- console.log(Math.pow(2,8))
+console.log(Math.pow(2, 8))
 
 
 
@@ -54,9 +57,10 @@ return power
 function factorial(x) {
     let result = 1;
     for (let number = x; number > 0; number -= 1) {
-       result = multiply(number, result)
-         
-        }
+
+        result = multiply(number, result)
+
+    }
     return result
 }
 console.log(factorial(5))
@@ -72,16 +76,16 @@ console.log(factorial(5))
 // So, the number in brackets is the 8th Fibonacci number.
 
 function fibonacci(num) {
-   let [a,b] = [0, 1];
-   while (--num > 1) {
-       [a, b] = [b, a + b];
-    } 
+    let [a, b] = [0, 1];
+    while (--num > 1) {
+        [a, b] = [b, a + b];
+    }
     return b;
 }
 
 console.log(fibonacci(8))
 
-used https://stackoverflow.com/ 
+// https://stackoverflow.com/ 
 
 // Hints 
 // The answers to most of these katas will look similar. They will typically involve:
