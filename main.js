@@ -23,6 +23,8 @@ function multiply(x, y) {
     return answer
 }
 console.log(multiply(6, 4))
+
+
 // kata 03
 // Write a function named "power" which takes two arguments ( x and n) and returns the the result of raising x to the nth power.
 // You may not use built-in math operators or functions (such as the * multiplication operator), or the ** operator for power/exponentiation). Instead, you will re-use functions you wrote in earlier katas to write this function
@@ -33,8 +35,12 @@ console.log(multiply(6, 4))
 
 // 3 * 3 * 3 * 3 = 81
 function power(x, n) {
-
+power = Math.pow
+return power
  }
+
+ console.log(Math.pow(2,8))
+
 
 
 // kata 04
@@ -65,7 +71,17 @@ console.log(factorial(5))
 // 0  1  1  2  3  5  8  [13]  21
 // So, the number in brackets is the 8th Fibonacci number.
 
+function fibonacci(num) {
+   let [a,b] = [0, 1];
+   while (--num > 1) {
+       [a, b] = [b, a + b];
+    } 
+    return b;
+}
 
+console.log(fibonacci(8))
+
+used https://stackoverflow.com/ 
 
 // Hints 
 // The answers to most of these katas will look similar. They will typically involve:
